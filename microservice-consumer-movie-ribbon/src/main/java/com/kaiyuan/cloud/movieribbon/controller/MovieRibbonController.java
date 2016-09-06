@@ -14,7 +14,7 @@ public class MovieRibbonController {
     @Autowired
     private MovieRobbionService movieRobbionService;
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/ribbon/{id}", method = RequestMethod.GET)
     public User findById(@PathVariable Long id) {
         return this.movieRobbionService.findById(id);
     }
