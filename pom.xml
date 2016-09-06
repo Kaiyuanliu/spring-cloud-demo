@@ -8,7 +8,8 @@
     <artifactId>spring-cloud-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>eureka</module>
+        <module>microservice-discovery-eureka</module>
+        <module>microservice-provider-user</module>
     </modules>
     <packaging>pom</packaging>
 
