@@ -1,5 +1,5 @@
 server:
-  port: 8000
+  port: ${PORT:8000}
 spring:
   application:
     name: microservice-provider-user
@@ -22,8 +22,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:1111/eureka
-  instance:
-    prefer-ip-address: true
 
 
 
