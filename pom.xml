@@ -12,6 +12,7 @@
         <module>microservice-provider-user</module>
         <module>microservice-consumer-user-ribbon</module>
         <module>microservice-consumer-user-feign</module>
+        <module>microservice-hystrix-dashboard</module>
     </modules>
     <packaging>pom</packaging>
 
