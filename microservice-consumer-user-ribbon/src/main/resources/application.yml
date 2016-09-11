@@ -1,0 +1,14 @@
+server:
+  port: ${PORT:8010}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka
+
+spring:
+  application:
+    name: microservice-consumer-user-ribbon
+  thymeleaf:
+    enabled: false
+
