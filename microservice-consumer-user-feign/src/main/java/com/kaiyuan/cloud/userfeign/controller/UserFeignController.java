@@ -14,8 +14,8 @@ public class UserFeignController {
     @Autowired
     private UserFeignClient userFeignClient;
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/feign/{id}", method = RequestMethod.GET)
     public User findById(@PathVariable Long id) {
-        return this.userFeignClient.findById(id);
+        return this.userFeignClient.findByFeignId(id);
     }
 }

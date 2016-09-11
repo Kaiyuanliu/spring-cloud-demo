@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @FeignClient(name = "microservice-provider-user", fallback = HystrixClientFallback.class)
 public interface UserFeignClient {
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    User findById(@PathVariable("id") Long id);
+    User findByFeignId(@PathVariable("id") Long id);
 }

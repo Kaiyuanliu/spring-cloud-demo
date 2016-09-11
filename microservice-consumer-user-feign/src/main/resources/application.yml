@@ -2,6 +2,8 @@ server:
   port: ${PORT:8011}
 
 eureka:
+  instance:
+    hostname: feign
   client:
     serviceUrl:
       defaultZone: http://localhost:1111/eureka

@@ -2,6 +2,8 @@ server:
   port: ${PORT:8010}
 
 eureka:
+  instance:
+      hostname: ribbon
   client:
     serviceUrl:
       defaultZone: http://localhost:1111/eureka
