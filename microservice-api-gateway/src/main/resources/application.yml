@@ -11,3 +11,10 @@ eureka:
   client:
     serviceUrl:
       defaultZone:  http://localhost:1111/eureka
+
+zuul:
+  routes:
+    users:
+      path: /users/**
+      service-id: microservice-provider-user
+    
