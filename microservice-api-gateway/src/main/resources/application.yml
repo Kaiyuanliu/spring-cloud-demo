@@ -1,0 +1,13 @@
+server:
+  port: ${PORT:8050}
+
+spring:
+  application:
+    name: microservice-api-gateway
+
+eureka:
+  instance:
+    hostname: api-gateway
+  client:
+    serviceUrl:
+      defaultZone:  http://localhost:1111/eureka
