@@ -1,0 +1,17 @@
+server:
+  port: ${PORT:8060}
+
+spring:
+  application:
+    name: microservice-config-server-eureka
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:/Users/apple/github/spring-cloud-demo
+          search-paths: microservice-config-repo
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka
